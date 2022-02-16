@@ -42,12 +42,11 @@ public class rockPaperScissorsGUIJava {
     {
         ImageIcon icon = new ImageIcon("RPS.png");
 
-        String prompt = "<html><b>Please Click on one of the following buttons,</b></html>\n"+
-                "<html><b>corresponding to your play</b></html>\n";
+        String prompt = "<html><b><h1>Please Select your choice</h1></b></html>\n";
 
         String[] plays = {"rock", "paper", "scissors"};
 
-        int play = JOptionPane.showOptionDialog(null, prompt, "Play "+"\"Rock, Paper, Scissors\""+"\t\tPrajwal Dhungana",
+        int play = JOptionPane.showOptionDialog(null, prompt, "Rock Paper Scissors Game"+"\t\t by Prajwal Dhungana",
                 1,1,icon,plays,plays[0]);
 
         switch (play)
@@ -137,7 +136,7 @@ public class rockPaperScissorsGUIJava {
                 ImageIcon icon = new ImageIcon("RPSTiedGame.png");
                 message += "<html><b><p style=\"font-size:23px\">This is a tie.</b></p></html>\n\n";
                 ties++;
-                JOptionPane.showOptionDialog(null, message, "Rock, Paper, Scissors"+"\t\tPrajwal Dhungana",
+                JOptionPane.showOptionDialog(null, message, "Rock Paper Scissors Game"+"\t\t by Prajwal Dhungana",
                         1,1,icon, new String[]{"Ok"}, "Ok");
             }
             else if (compChoice == 'r' && userChoice == 'p')
@@ -146,7 +145,7 @@ public class rockPaperScissorsGUIJava {
                 message += "<html><b><p style=\"font-size:23px\">paper wraps rock!</b></p></html>\n\n";
                 message += "You win!";
                 wins++;
-                JOptionPane.showOptionDialog(null, message, "Rock, Paper, Scissors"+"\t\tPrajwal Dhungana",
+                JOptionPane.showOptionDialog(null, message, "Rock Paper Scissors Game"+"\t\t by Prajwal Dhungana",
                         1,1,icon, new String[]{"Ok"}, "Ok");
             }
             else if (compChoice == 'r' && userChoice == 's')
@@ -155,7 +154,7 @@ public class rockPaperScissorsGUIJava {
                 message += "<html><b><p style=\"font-size:23px\">rock crushes scissors!</b></p></html>\n\n";
                 message += "Computer wins!";
                 losses++;
-                JOptionPane.showOptionDialog(null, message, "Rock, Paper, Scissors"+"\t\tPrajwal Dhungana",
+                JOptionPane.showOptionDialog(null, message, "Rock Paper Scissors Game"+"\t\t by Prajwal Dhungana",
                         1,1,icon, new String[]{"Ok"}, "Ok");
             }
             else if (compChoice == 's' && userChoice == 'r')
@@ -164,7 +163,7 @@ public class rockPaperScissorsGUIJava {
                 message += "<html><b><p style=\"font-size:23px\">rock crushes scissors!</b></p></html>\n\n";
                 message += "You win!";
                 wins++;
-                JOptionPane.showOptionDialog(null, message, "Rock, Paper, Scissors"+"\t\tPrajwal Dhungana",
+                JOptionPane.showOptionDialog(null, message, "Rock Paper Scissors Game"+"\t\t by Prajwal Dhungana",
                         1,1,icon, new String[]{"Ok"}, "Ok");
             }
             else if (compChoice == 's' && userChoice == 'p')
@@ -173,7 +172,7 @@ public class rockPaperScissorsGUIJava {
                 message += "<html><b><p style=\"font-size:23px\">scissors cuts paper!</b></p></html>\n\n";
                 message += "Computer wins!";
                 losses++;
-                JOptionPane.showOptionDialog(null, message, "Rock, Paper, Scissors"+"\t\tPrajwal Dhungana",
+                JOptionPane.showOptionDialog(null, message, "Rock Paper Scissors Game"+"\t\t by Prajwal Dhungana",
                         1,1,icon, new String[]{"Ok"}, "Ok");
             }
             else if (compChoice == 'p' && userChoice == 'r')
@@ -182,7 +181,7 @@ public class rockPaperScissorsGUIJava {
                 message += "<html><b><p style=\"font-size:23px\">paper wraps rock!</b></p></html>\n\n";
                 message += "Computer wins!";
                 losses++;
-                JOptionPane.showOptionDialog(null, message, "Rock, Paper, Scissors"+"\t\tPrajwal Dhungana",
+                JOptionPane.showOptionDialog(null, message, "Rock Paper Scissors Game"+"\t\t by Prajwal Dhungana",
                         1,1,icon, new String[]{"Ok"}, "Ok");
             }
             else if (compChoice == 'p' && userChoice == 's')
@@ -191,7 +190,7 @@ public class rockPaperScissorsGUIJava {
                 message += "<html><b><p style=\"font-size:23px\">scissors cuts paper!</b></p></html>\n\n";
                 message += "You win!";
                 wins++;
-                JOptionPane.showOptionDialog(null, message, "Rock, Paper, Scissors"+"\t\tPrajwal Dhungana",
+                JOptionPane.showOptionDialog(null, message, "Rock Paper Scissors Game"+"\t\t by Prajwal Dhungana",
                         1,1,icon, new String[]{"Ok"}, "Ok");
             }
 
@@ -206,7 +205,7 @@ public class rockPaperScissorsGUIJava {
 
         ImageIcon icon = new ImageIcon("RPS2.png");
 
-        JOptionPane.showOptionDialog(null, message, "Rock, Paper, Scissors"+"\t\tPrajwal Dhungana",
+        JOptionPane.showOptionDialog(null, message, "Rock Paper Scissors Game"+"\t\t by Prajwal Dhungana",
                 1,1, icon, new String[]{"Ok"}, "Ok");
 
     }
